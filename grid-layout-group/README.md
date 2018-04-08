@@ -2,7 +2,7 @@
 
 ## Gotchas
 
-- [Dynamic Content](#Dynamic-Content)
+- [Dynamic Content](#dynamic-content)
 
 
 
