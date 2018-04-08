@@ -11,7 +11,6 @@
 When you are dynamically adding objects to a Grid Layout Group with a Content Size Fitter, you can run into a problem where the content area doesn't properly adjust to the size of the dynamic content. This will likely manifest when your scene is building the content in `Start` or `Awake` and you are using `SceneManager.LoadScene()` to transition to the scene. To overcome this you need to do two things:
 
  1. Force the grid layout group to resize itself AFTER you've added the content. 
- 2. Set the script's execution order AFTER the "default time"
  
 ```
 // Holds the reference to the Object which has the
@@ -35,3 +34,7 @@ void Start() {
     k
 }
 ```
+ 2. Set the script's execution order AFTER the "default time"
+
+    ![Execution Order Example 1](images/exec-order-1.png)
+    ![Execution Order Example 2](images/exec-order-2.png)
